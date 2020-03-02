@@ -24,6 +24,8 @@ Route::get('/produtcs', 'ProductsController@index')->name('produtcs');
 Route::get('/create_produtcs', 'ProductsController@createProdutcs')->name('create_produtcs');
 Route::post('/save_products', 'ProductsController@saveProdutcs')->name('save_products');
 Route::get('/product_edit/{id}', 'ProductsController@editProdutcs')->name('product_edit');
+Route::get('/product_view/{id}', 'ProductsController@viewProdutcs')->name('product_view');
+Route::post('/product_get_data', 'ProductsController@getDataProdutc')->name('product_get_data');
 Route::post('/update_produtcs', 'ProductsController@updateProdutcs')->name('update_produtcs');
 Route::get('/produtcs_delete/{id}', 'ProductsController@deleteProdutcs')->name('produtcs_delete');
 
