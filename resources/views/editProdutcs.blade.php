@@ -70,8 +70,9 @@
                             </div>
                         </div>
 
-
-                        <input id="image" type="file" class="form-control" name="image">
+                        <img height="100" width="100" src="{{url('images')}}/{{$data['image']}}" />
+                        <input id="image" type="file" class="form-control" name="image"
+                               value="{{url('images')}}/{{$data['image']}}"
 
 
                         <div class="form-group row mb-0">
@@ -87,4 +88,7 @@
         </div>
     </div>
 </div>
+
+
+
 @endsection
